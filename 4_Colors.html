@@ -1,0 +1,55 @@
+<!-- There are three different methods for defining colors in CSS: by name, RGB values, and hexadecimal values.
+
+1. Color by Name:
+CSS provides predefined color names that you can use directly in your styles. There are over 140 standard color names, like blue, green, red, and blueviolet, among others.
+
+#para-1 {
+    color: blueviolet;
+}
+
+2. Color by RGB:
+The rgb() function allows you to define a color using its red, green, and blue (RGB) components. Each value ranges from 0 to 255.
+
+#para-2 {
+    color: rgb(223, 130, 54);
+}
+
+3. Color by Hex Value:
+Hexadecimal colors are another way to define colors in CSS, and they are commonly used in web design. A hex color starts with #, followed by six characters representing the red, green, and blue values in hexadecimal format (ranging from 00 to FF).
+
+#para-3 {
+    color: white;
+    background-color: #ff4532;
+}
+
+Here, the text color is set to white, and the background color is defined by the hex code #ff4532, which is a shade of red.
+
+Additional Concept: Background Color
+You can also set the background color of an element using the background-color property, which works similarly to the color property.
+
+#para-2 { 
+    background-color: rgb(0,0,0);
+}
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="4_Colors.css">
+</head>
+<body>
+    <h2>para-1</h2>
+    <p id="para-1">paragraph 1</p>
+
+    <h2>para-2</h2>
+    <p id="para-2">paragraph 2</p>
+
+    <h2>para-3</h2>
+    <p id="para-3">paragraph 3</p>
+</body>
+</html>

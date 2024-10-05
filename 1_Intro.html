@@ -1,0 +1,72 @@
+<!-- Introduction to CSS
+CSS (Cascading Style Sheets) is used to add style to web pages. It defines how HTML elements should be displayed on the screen. With CSS, you can control the layout, colors, fonts, and responsiveness of your website.
+
+Key Points:
+CSS gives style to raw HTML: Without CSS, web pages are plain and simple.
+CSS is used to design responsive websites: It ensures that your website adjusts to different screen sizes (desktop, tablet, mobile).
+CSS separates structure from design: Keeping HTML and CSS in separate files is a good practice for clean and maintainable code.
+
+CSS Syntax
+
+selector { property: value; }
+
+Selector: Specifies the HTML element(s) you want to style.
+Property: The CSS property you want to change (e.g., color, background-color, margin).
+Value: The value assigned to the property (e.g., red, 10px, bold).
+Example:
+
+p {
+    color: blue;
+    background-color: lightgray;
+}
+
+This will change the text color of all <p> tags to blue and give them a light gray background.
+
+Ways to Add CSS to HTML
+
+Inline CSS: CSS is written directly inside the HTML element using the style attribute.
+
+Example:
+<p style="color: red; background-color: yellow;">This is an inline styled paragraph.</p>
+
+Internal CSS:
+CSS is written inside the <style> tag, usually in the <head> of the HTML document.
+
+Example:
+
+<style>
+    p {
+        color: blue;
+        background-color: lightgray;
+    }
+</style>
+
+External CSS:
+The best practice is to keep CSS in a separate .css file and link it to the HTML.
+
+Example of linking CSS:
+<link rel="stylesheet" href="1_Intro.css"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Internal CSS Example -->
+     <!-- <style>
+        p {
+            color: rgb(245, 184, 245);
+            background-color: seagreen;
+        }
+    </style> -->
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="1_Intro.css">
+</head>
+<body>
+    <h3>Introduction to CSS</h3>
+    <p>HTML/CSS</p>
+</body>
+</html>

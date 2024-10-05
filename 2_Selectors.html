@@ -1,0 +1,91 @@
+<!-- CSS Selectors
+CSS selectors are a fundamental part of styling HTML elements. They allow us to target specific elements or groups of elements and apply styles to them. There are different types of selectors that let us target elements based on their type, ID, class, or group.
+
+Key Points:
+CSS selectors target HTML elements to apply styles.
+They make it easy to apply styles to single or multiple elements in a structured way.
+
+Types of CSS Selectors
+1. Element Selector
+The element selector applies styles to all occurrences of a specific HTML tag. It is one of the most common selectors used in CSS.
+
+Example:
+
+<p>This is a simple paragraph to demonstrate CSS selectors.</p>
+<p>This is another paragraph.</p>
+
+<style>
+    p {
+        color: red;
+        border: 2px solid red;
+    }
+</style>
+
+This CSS will apply to all <p> tags, making their text color red and adding a red border around each.
+
+2. ID Selector
+The ID selector is used to apply styles to a specific element with a unique ID. IDs are unique within a page, meaning each element can have only one ID, and that ID can be used only once in the document.
+
+Example:
+<p id="para">This is the first paragraph.</p>
+<p>paragraph.</p>
+
+<style>
+    #para {
+        color: green;
+    }
+</style>
+
+The paragraph with the id="para" will have green text, while other paragraphs remain unaffected.
+
+3. Class Selector
+Class selectors allow you to apply styles to multiple elements by assigning them the same class name. Unlike IDs, classes can be reused on multiple elements.
+
+Example:
+
+<p class="highlight">This is a highlighted paragraph.</p>
+<p class="highlight">This is another highlighted paragraph.</p>
+
+<style>
+    .highlight {
+        color: yellow;
+        background-color: blue;
+    }
+</style>
+
+Both paragraphs with the class="highlight" will have yellow text on a blue background.
+
+4. Grouping Selector
+Grouping selectors allow you to apply the same styles to multiple elements by separating the selectors with a comma. This reduces repetition in your CSS and makes your code cleaner.
+
+Example:
+<footer>This is the footer.</footer>
+<span>This is a span element.</span>
+
+<style>
+    footer, span {
+        background-color: pink;
+    }
+</style>
+
+Both the <footer> and <span> elements will have a pink background. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="2_Selectors.css">
+</head>
+<body>
+    <p id="para">This is the first paragraph with ID selector applied.</p>
+    <p class="bgBlue">This is the second paragraph with class selector applied.</p>
+    <div>
+        <p>This is a paragraph inside a div.</p>
+        <span>This is a span element.</span>
+    </div>
+    <footer>This is the footer of the page.</footer>
+</body>
+</html>

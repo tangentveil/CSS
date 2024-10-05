@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400;700&display=swap');
+
+.edu-au-vic-wa-nt-guides-header {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.edu-au-vic-wa-nt-guides-paragraph {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-size: 33px;
+    line-height: 1.3em;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
