@@ -1,0 +1,73 @@
+<!-- 
+With the help of CSS, you can put your HTML elements at the position of your choice. 
+
+1. Position: static
+This is the default position for any HTML element.
+The element is placed in the normal document flow.
+
+2. Position: relative
+The element is positioned relative to its normal position.
+You can adjust its position using top, right, bottom, or left properties, but the space originally allocated for the element remains unchanged.
+
+Example:
+
+#box3 {
+    position: relative;
+    top: 34px;
+    left: 34px;
+}
+Here, box3 is moved 34px down and to the right from its original position, but the original space is still occupied.
+
+3. Position: absolute
+The element is removed from the normal document flow and positioned relative to its nearest positioned ancestor (an ancestor that has a position other than static). If no such ancestor exists, it is positioned relative to the initial containing block (usually the HTML element).
+
+Example:
+
+#box3 {
+    position: absolute;
+    top: 34px;
+    left: 34px;
+}
+Here, box3 is moved 34px down and to the right relative to its nearest ancestor or the page.
+
+4. Position: fixed
+The element is removed from the normal document flow and positioned relative to the viewport. It remains fixed even when the page is scrolled.
+
+Example:
+
+#box3 {
+    position: fixed;
+    right: 4px;
+    bottom: 2px;
+}
+box3 is stuck in the bottom-right corner of the viewport and will stay there even if you scroll.
+
+5. Position: sticky
+The element toggles between relative and fixed positioning depending on the user's scroll position.
+It remains relative until the user scrolls past a certain point, after which it becomes fixed.
+Example:
+
+#box3 {
+    position: sticky;
+    top: 3px;
+}
+box3 will act as a normal block until the user scrolls past it, at which point it will stick to the top of the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="11_Positions.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

@@ -7,7 +7,7 @@ body {
 }
 
 .line {
-    width: 900px;
+    /* width: 900px; */
     border: 3px solid purple;
     background-color: rgb(250, 226, 205);
     margin: 33px auto;
@@ -33,7 +33,7 @@ body {
 #stationary {
     /* float: left; */
     clear: both;
-    clear: left;
+    /* clear: left; */
     width: 100%;
 }
 
@@ -46,5 +46,5 @@ p, h3 {
 
 h1 {
     margin: 23px auto;
-    width: 455px;
+    width: 370px;
 }
