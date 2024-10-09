@@ -1,0 +1,33 @@
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#box1 {
+  position: relative;
+  top: 49px;
+  z-index: 1;
+  background-color: green;
+}
+
+#box2 {
+  position: relative;
+  top: 14px;
+  /* z-index  will work only for position: relative, absolute, fixed or sticky; */
+  z-index: 0;
+  /* will hide the element and the space */
+  /* display: none;  */
+  /* will hide the element but will show its empty space */
+  /* visibility:hidden;  */
+  background-color: red;
+}
+
+#box3 {
+  background-color: blue;
+}
+
+#box4 {
+  background-color: yellow;
+}

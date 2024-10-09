@@ -1,0 +1,81 @@
+<!-- 1. Visibility Property:
+visibility: hidden: This property makes the element invisible on the page but still reserves the space it occupies in the layout.
+Example:
+
+#box2 {
+    visibility: hidden;
+}
+Effect: The #box2 is hidden but still takes up space on the page.
+
+2. Difference between display: none and visibility: hidden:
+display: none: Completely removes the element from the page, and no space is reserved for it.
+visibility: hidden: Hides the element, but the element still occupies space on the page.
+Example for display: none:
+
+#box2 {
+    display: none;
+}
+Effect: The #box2 is not displayed at all, and no space is reserved for it.
+
+3. Z-Index Property:
+The z-index property controls the stacking order of elements when they overlap. An element with a higher z-index appears in front of elements with lower z-index values.
+Important: z-index works only with elements that have a position property set to relative, absolute, fixed, or sticky.
+
+Example:
+
+#box1 {
+    position: relative;
+    z-index: 1;
+    background-color: greenyellow;
+}
+#box2 {
+    position: relative;
+    z-index: 0;
+    background-color: rebeccapurple;
+}
+Effect: Since #box1 has a higher z-index (1) than #box2 (0), #box1 will appear in front of #box2 if they overlap.
+
+4. Positioning and Z-Index Interaction:
+the position: relative is applied to both boxes, and they are moved using the top property. The z-index is then used to determine the order in which they appear when overlapping.
+
+Example:
+
+#box1 {
+    top: 49px;
+    position: relative;
+    z-index: -35;
+    background-color: green;
+}
+#box2 {
+    top: 14px;
+    position: relative;
+    z-index: -165;
+    background-color: red;
+}
+Effect: Since #box1 has a higher z-index than #box2, #box1 will appear behind #box2 because both z-index values are negative, but #box2 has a smaller value (-165).
+
+Summary
+The visibility, display, and z-index properties are essential tools for controlling how elements appear on the page and interact with one another. By combining them, you can manage layout and element visibility without removing elements from the document flow entirely.
+Use cases:
+visibility: hidden when you want to hide an element but keep the layout intact.
+display: none when you want to remove the element and its layout effect.
+z-index when you need to control which elements appear on top of others when they overlap. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="13_VisibilityAndZ-Index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
