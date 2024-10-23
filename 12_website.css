@@ -1,10 +1,6 @@
-body {
+* {
     margin: 0;
     padding: 0;
-}
-
-h1{
-    margin: 0;
 }
 
 a{
@@ -20,8 +16,6 @@ header{
 
 .left {
     display: inline-block;
-    left: 60px;
-    top: 20px;
 }
 
 .left img {
@@ -34,21 +28,10 @@ header{
     margin: 10px 0px;
 }
 
-nav {
-    display: block;
-    width: 36%;
-    margin: 29px auto;
-}
-
 .right {
     position: absolute;
     right: 34px;
     top: 10px;
-}
-
-
-.navbar li {
-    display: inline-block;
 }
 
 .container{
@@ -58,15 +41,6 @@ nav {
     border-radius: 5px;
 }
 
-
-.navbar li a:hover,
-.navbar li a.active {
-    background-color: rgb(255, 102, 0, 0.3);
-    color: rgb(255, 102, 0);
-    border-radius: 5px; 
-    padding: 2px;
-}
-
 .btn {
     margin: 0px 9px;
     background-color: rgb(255, 102, 0);
@@ -74,6 +48,7 @@ nav {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 5px;
 }
 
 .btn:hover {
