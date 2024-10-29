@@ -1,0 +1,103 @@
+<!-- 
+ 1. Attribute Selectors
+Attribute selectors allow you to target elements based on the presence, value, or part of an attribute. They’re highly useful for applying styles to elements with specific attributes, such as type in <input> elements or target in <a> links.
+
+Basic Attribute Selectors Examples
+
+Selecting an element by attribute:
+a[target] {
+    font-size: 44px;
+    color: violet;
+}
+This will style all <a> elements that have a target attribute, setting the font size to 44px and color to violet.
+
+Selecting an element by specific attribute value:
+a[target='_self'] {
+    font-size: 14px;
+    color: rgb(13, 22, 151);
+}
+Here, the CSS only targets <a> elements with target="_self", applying a different font size and color.
+
+Applying styles based on type in <input> elements:
+input[type='text'] {
+    padding: 23px;
+    border: 2px solid red;
+}
+
+input[type='email'] {
+    color: yellow;
+    border: 4px solid black;
+}
+These styles are applied to specific input fields based on their type, with the text input getting a red border, and the email input having a black border and yellow text.
+
+2. Nth-Child Pseudo-Selectors
+The nth-child pseudo-selector targets elements based on their position within a parent element. It’s useful for applying styles in a repetitive pattern.
+
+Basic Nth-Child Selectors
+
+Targeting a specific child element:
+li:nth-child(3) {
+    color: cyan;
+}
+This style only affects the third <li> element, changing its text color to cyan.
+
+Selecting every third element:
+li:nth-child(3n+3) {
+    color: red;
+}
+This formula-based selector changes the color to red for every third <li> item, starting from the third item.
+
+Explanation: The formula 3n + 3 matches elements at positions 3, 6, 9, etc. Here, n represents sequential numbers starting from 0. When n = 0, 3n + 3 = 3, and for n = 1, 3n + 3 = 6, and so forth.
+
+Alternating Styles
+Even and Odd Children: The nth-child selector supports keywords like even and odd, which allow for alternating styles:
+li:nth-child(even) {
+    background-color: yellow;
+}
+This applies a yellow background color to every even-numbered <li> item in the list.
+
+Summary of Selectors Used
+
+
+Selector	                Purpose	                                         Applies To
+
+[attribute]	                Targets elements with a specific attribute	     a[target] targets all <a> with target
+[attribute='value']	        Matches attribute with specific value	         a[target='_blank'] targets links with target="_blank"
+nth-child(n)	            Selects nth child	                             li:nth-child(3) targets third list item
+nth-child(3n+3)	            Selects every third child	                     li:nth-child(3n+3) targets every third item
+nth-child(even)	            Targets even children	                         li:nth-child(even) targets even list items -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="18_AttributeAndNthChildPseudoSelectors.css">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+</html>

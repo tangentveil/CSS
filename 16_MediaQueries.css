@@ -1,0 +1,40 @@
+/* Base styling for all boxes */
+.box {
+    font-size: 72px;
+    text-align: center;
+    color: white;
+    display: none; /* Initially, all boxes are hidden */
+}
+
+/* Media query for screens with a max-width of 300px */
+@media only screen and (max-width: 300px) {
+    #box-1 {
+        display: block; /* Show box-1 only */
+        background-color: cyan;
+    }
+}
+
+/* Media query for screens between 300px and 500px */
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #box-2 {
+        display: block; /* Show box-2 only */
+        background-color: blueviolet;
+    }
+}
+
+/* Media query for screens between 500px and 800px */
+@media (min-width: 500px) and (max-width: 800px) {
+    #box-3 {
+        display: block; /* Show box-3 only */
+        color: black;
+        background-color: yellow;
+    }
+}
+
+/* Media query for screens wider than 800px */
+@media (min-width: 800px) {
+    #box-4 {
+        display: block; /* Show box-4 only */
+        background-color: green;
+    }
+}

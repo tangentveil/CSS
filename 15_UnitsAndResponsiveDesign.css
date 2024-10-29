@@ -1,0 +1,21 @@
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 90vw; /* Width is 90% of the viewport width */
+    padding: 2em; /* 3 times the parent(html) padding */
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 3rem; /* 2 times the root font size (16px) */
+    text-align: center;
+}
+
+.box {
+    height: 20vh; /* Height is 20% of the viewport height */
+    background-color: lightcoral;
+    margin: 10px 0;
+}
