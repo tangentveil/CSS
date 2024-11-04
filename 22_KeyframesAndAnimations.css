@@ -9,9 +9,9 @@
   position: relative;
   animation-name: animate_1;
   /* animation-name: animate_2; */
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  /* animation-fill-mode: alternate; */
+  /* animation-duration: 8s; */
+  /* animation-iteration-count: 1; */
+  /* animation-fill-mode: forwards; */
   /* animation-timing-function: ease-in-out; */
   /* animation-delay: 3s; */
   /* animation-direction: reverse;  */
@@ -22,14 +22,14 @@
 }
 
 @keyframes animate_1 {
-    from {
-      width: 200px;
-    }
-  
-    to {
-      width: 1400px;
-    }
-  }  
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 1400px;
+  }
+}
 
 @keyframes animate_2 {
   0% {
